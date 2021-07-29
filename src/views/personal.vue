@@ -19,15 +19,9 @@
 
 <script>
 import Vue from 'vue';
-import { Tabbar, TabbarItem,Cell, CellGroup ,Button} from 'vant';
 import imgUrl1 from '../assets/img/1.jpg';
 import { Dialog } from 'vant';
-
-Vue.use(Cell);
-Vue.use(CellGroup);
-Vue.use(Tabbar);
-Vue.use(TabbarItem);
-Vue.use(Button);
+Vue.use(Dialog);
 export default {
     name:'personal',
     data(){
@@ -38,7 +32,6 @@ export default {
     },
     methods:{
       outLogin(){
-        console.log("1");
         Dialog.confirm({
         message: '是否要退出登录',
       })

@@ -6,6 +6,9 @@ import shopList from '../views/shopList.vue'
 import personal from '../views/personal.vue'
 import login from '../views/login.vue'
 import forget from '../views/forget.vue'
+import text from '../views/text.vue'
+import vip from '../views/vip.vue'
+import editPerson from '../views/editPerson.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +25,16 @@ const routes = [
         component: home,
        
       },
+      {
+        path: 'vip',
+        name: 'vip',
+        component: vip,
+      },
+      {
+        path: 'editPerson',
+        name: 'editPerson',
+        component: editPerson,
+      },
         {
         path: 'shopList',
         name: 'shopList',
@@ -34,6 +47,7 @@ const routes = [
       },
     ]
   },
+ 
   {
     path: '/login',
     name: 'login',
@@ -43,8 +57,13 @@ const routes = [
     path: '/forget',
     name: 'forget',
     component: forget,
-  }
-
+  },
+  {
+    path: '/text',
+    name: 'text',
+    component: text,
+  },
+  
 ]
 
 const router = new VueRouter({

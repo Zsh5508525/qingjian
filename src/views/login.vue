@@ -3,6 +3,7 @@
 		<h3>轻简风尚</h3>
 		<van-form @submit="onSubmit">
 			<van-field
+			 	autocomplete="off"
 				v-model="username"
 				name="用户名"
 				placeholder="用户名"
@@ -69,13 +70,8 @@
 </style>
 
 <script>
-import Vue from 'vue';
-import { Form } from 'vant';
-import { Field } from 'vant';
 import imgBg from '../assets/img/login_bg.png';
 
-Vue.use(Form);
-Vue.use(Field);
 	export default {
 		imgBg:imgBg,
         name:'login',
